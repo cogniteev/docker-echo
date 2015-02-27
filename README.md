@@ -1,4 +1,4 @@
-# docker-truecho
+# `cogniteev/truecho` Docker image
 
 Docker automated-build providing a minimal Docker image for data container, compatible with Docker Compose.
 
@@ -12,14 +12,14 @@ Unfortunately [Docker Compose][https://github.com/docker/compose] assumes that e
 
 This image is meant to workaround this by providing this missing `/bin/echo` executable.
 
-## Image content
-
-* `/bin/echo`
-* `/true`
-
 ## Base Docker Image
 
-* [tianon/true](https://registry.hub.docker.com/u/tianon/true/)
+* [tianon/true](https://registry.hub.docker.com/u/tianon/true/) - check the 125 bytes Docker image thanks to a `true` executable written in assembler [on GitHub][https://github.com/tianon/dockerfiles].
+
+## Image content
+
+* `/true`
+* `/bin/echo` (written in C, not ASM ... yet)
 
 ## Installation
 
