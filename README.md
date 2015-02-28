@@ -8,7 +8,7 @@ Data-only container does not need Linux distribution. It just needs an executabl
 
 [tianon/true](https://registry.hub.docker.com/u/tianon/true/) is the perfect Docker image for that. It provides `/true` executable and ... that's it!
 
-Unfortunately [Docker Compose][https://github.com/docker/compose] assumes that every container has the `/bin/echo` executable (see [issue on GitHub](https://github.com/docker/compose/issues/919])
+Unfortunately [Docker Compose][https://github.com/docker/compose] assumes that every container has the `/bin/echo` executable (see [Compose issue #919](https://github.com/docker/compose/issues/919]) on GitHub)
 
 This image is meant to workaround this by providing this missing `/bin/echo` executable.
 
